@@ -10,7 +10,7 @@ def load_products():
     
     db.query(Product).delete()
     
-    with open('../data/products_sample.json', 'r', encoding='utf-8') as f:
+    with open('./data/products_sample.json', 'r', encoding='utf-8') as f:
         products_data = json.load(f)
     
     for product_data in products_data:
